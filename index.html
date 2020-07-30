@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Content Type Meta tag -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <!--Responsive Viewport Meta tag-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+
+    <title>Todo list app</title>
+
+    <!-- Roboto font embed -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-logo">
+        <div class="navbar-header">
+            <p class="navbar-brand">To Do List</p>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="todolist-wrapper">
+            <div class="col-md-8 todo-wrapper">
+                <input type="text" placeholder="Enter an activity" id="item">
+                <button class="btn-info header-btn" id="add">
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+        <div class="todolist-wrapper">
+            <div class="col-md-8">
+                <h4>ToDo's</h4>
+                <ul class="todo scroll-wrapper" id="todo"></ul>
+            </div>
+            <!-- Completed tasks -->
+            <div class="col-md-8">
+                <h4>Completed</h4>
+                <ul class="todo scroll-wrapper" id="completed"></ul>
+            </div>
+        </div>
+    </div>
+    <!-- JavaScripts -->
+    <script src="app.js"></script>
+</body>
+
+</html>
